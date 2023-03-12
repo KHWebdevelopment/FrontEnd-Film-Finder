@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Film Finder</title>
+    
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div>
+            <a href="#"><img src="/header.png"></a>
+        </div>
+    </header>
+    <nav>
+        <div class="radio">
+            <label for="Latest" class="filter"><input id="Latest" name="moviefilter" value="latest-movies" type="radio" class="filter">Latest Movies, 2014 or newer</label>
+            <label for="Avenger" class="filter"><input id="Avenger" name="moviefilter" value="avenger-movies" type="radio" class="filter">Avenger Movies</label>
+            <label for ="X-Men" class="filter"><input id="X-Men" name="moviefilter" value="x-men-movies" type="radio" class="filter">X-Men Movies</label>
+            <label for="Princess" class="filter"><input id="Princess" name="moviefilter" value="princess-movies" type="radio" class="filter">Princess Movies</label>
+            <label for="Batman" class="filter"><input id="Batman" name="moviefilter" value="batman-movies" type="radio" class="filter">Batman Movies</label>
+        </div>
+        <form class="form">
+            <div class="AllMovies">
+                <button id=buttonBack class="back">Back</button>
+            </div>
+            <div class="search-bar">
+                <input id="search" type="text" class="input" placeholder="Search...." />
+            </div>
+        </form>
+    </nav>
+    <main>
+        <ul id="posters"></ul>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Kato Heijmans. All rights reserved!</p>
+        </div>
+    </footer>
+</div>
+<script defer src="movies.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
